@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/virtual.css">
+    <link rel="home" href="index.html#project">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <title>360 Vizions</title>
+</head>
+<body>
+    <div class="virtual-banner">
+        <div class="virtual-navbar">
+            <div class="test">
+            <a href="#"><img src="images/newlogo2.png" alt=""></a>
+            <!-- <img src="images/newlogo2.png"  alt="logo"> -->
+            </div>
+        </div>
+    </div>
+    <div class="Virtual-content">
+        <h1>Virtual Tour</h1>
+        <h3>Discover what is on the inside and <br>take a virtual tour now.</h3>
+        <div class="banner-btn">
+            <a href="https://api.whatsapp.com/send?phone=917483394954&text=Hey%20360%20Vizions!%20I%20am%20interested%20to%20know%20more%20about%20Virtual%20Tour%20service%20offered%20by%20your%20company.%20Could%20you%20please%20share%20some%20details%20on%20your%20offerings%2C%20pricing%20and%20the%20process%20involved%20?" target="_blank"><span></span>Book Now</a>
+            <a href="#service"><span></span>Watch Demo</a>
+        </div>
+    </div>
+    <!-- this code is for menu sidebar -->
+    <div id="virtual-sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="index.html#feature">OUR FEATURES</a></li>
+                <li><a href="index.html#service">SERVICES</a></li>
+                <li><a href="index.html#project">PROJECTS</a></li>
+                <li><a href="#virtual-footer">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="virtual-menuBtn">
+        <img src="images/menu.png" id="menu">
+    </div>
+
+<!-- DEMO PART -->
+
+
+<div id="service">
+    <div class="title-text">
+        <p>Virtual Tour</p>
+    </div>
+    <div class="virtual-text-title">
+        <H1>Explore our demos here</H1>
+    </div>
+    </div>
+
+    <div class="virtual-service-row">
+        <div class="virtual-service-col">
+            <iframe src="https://my.matterport.com/show/?play1&share=0&m=Uip9wT8SJXw"  frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+
+        </div>
+        <div class="virtual-service-col">
+            <iframe src="https://my.matterport.com/show/?play1&share=0&m=YTGPBij5wjv"  frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+
+        </div>
+        <div class="virtual-service-col">
+            <iframe src="https://my.matterport.com/show/?play1&share=0&m=L86bFsZXA6L"  frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+
+            
+        </div>
+    </div>
+        
+
+    </div>
+</div>
+
+
+<!-- footer -->
+
+
+<div id="virtual-footer"> 
+    <img src="images/logo.jpg" class="footer-img">
+    <div class="title-text">
+        <p>CONTACT</p>
+        <!-- <h1>Follow us on</h1> -->
+    </div>
+    <div class="virtual-footer-row">
+        <div class="virtual-footer-left">
+            <h1>Opening Hours</h1>
+            <p><i class="fa fa-clock-o"></i>Monday to Friday - 9am to 9pm</p>
+            <p><i class="fa fa-clock-o"></i>Saturday to Sunday - Holiday</p>
+        </div>
+        <div class="virtual-footer-right">
+            <h1>Get in Touch</h1>
+            <p>Email: workwith360vizions@gmail.com<i class="fa fa-paper-plane"></i></p>
+            <p> Phone: +91 74833 94954<i class="fa fa-phone"></i></p>
+            <p> +91 99809 11508 <i class="fa fa-phone"></i></p>
+        </div>
+    </div>
+    <div class="virtual-social-link">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-youtube"></i>
+        
+
+        <p>© Copyright 360 Vizions, All rights reserved</p>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript for menu sidebar working -->
+
+
+<script>
+    var menuBtn = document.getElementById("virtual-menuBtn");
+    var sideNav = document.getElementById("virtual-sideNav");
+    var menu = document.getElementById("menu");
+
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "images/close.png";
+        } else {
+            sideNav.style.right = "-250px";
+            menu.src = "images/menu.png";
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true
+    });
+</script>
+
+
+
+</body>
+</html>
