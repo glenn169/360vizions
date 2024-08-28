@@ -29,6 +29,22 @@
     font-weight: 300;
 }
 
+.virtual-banner-btn {
+    margin: 70px auto 0;
+    border-radius: 25px;
+    z-index: 10; /* Ensure the buttons are above other elements */
+    position: relative; /* Use relative positioning to apply z-index */
+}
+
+.virtual-banner-btn a {
+    color: white; /* Make sure the text is visible */
+    background-color: #1a8ab4; /* Ensure there's enough contrast with the background */
+}
+
+.virtual-navbar {
+    z-index: 5; /* Lower than the buttons */
+}
+
 
 
 /* DEMOOOO */
@@ -175,79 +191,6 @@
     margin-bottom: -30px;
 }
 
-@media screen and (max-width: 770px){
-    #virtual-footer{
-        padding: 80px 0 20px;
-    background: white;
-    position: relative;
-    }
-
-    .virtual-service-row{
-        width: 94%;
-    }
-
-    .virtual-footer-row{
-        width: 92%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    }
-
-    .virtual-footer-row p{
-        margin: 5px 0; 
-        line-height: 35px;
-    }
-
-    .virtual-footer-row h1{
-        margin: 10px 0;
-    }
-
-    .virtual-footer-left .fa,.virtual-footer-right .fa{
-        font-size: 20px;
-        color: #1a8ab4;
-        margin: 10px;
-    }
-
-    .virtual-footer-img{
-        max-width: 370px;
-        opacity: 0.1;
-        position: absolute;
-        left: 50%;
-        top: 60%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .virtual-footer-left, .virtual-footer-right{
-        flex-basis: 90%;
-        font-size: 14px;
-    }
-
-    .virtual-footer-right{
-        text-align: right;
-    }
-
-    .virtual-footer-img{
-        top: 25% ;
-    }
-
-    .virtual-text-title h1{
-        font-size: 30px;
-        text-align: center;
-        margin-top: -70px;
-        margin-bottom: -50px;
-    }
-
-   
-    .virtual-service-col iframe{
-        align-content: center;
-        width: 89%;
-         padding: 10px; 
-        border-radius: 5px;
-        
-    }
-    
-    }
 
 
     /* services button */
@@ -349,8 +292,29 @@
     transition: 0.5s;
 }
 
-@media screen and (max-width: 770px) {
-    .model-banner {
+@media only screen and (max-device-width: 600px) {
+
+    .render-banner-btn{
+        width: 20%;
+            margin: 70px auto 0;
+            margin-bottom: 10px;
+        }
+   .render-banner-btn a{
+    width: 200px;
+            font-size: 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px -70px;
+            padding: 12px 0;
+            color: white;
+            border: 2px solid #1a8ab4;
+            border-radius: 25px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+   }
+   
+        .model-banner {
         width: 100%;    
         background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0, 0, 0, 0.75)),url(../images/virtualback.jpg);
         background-size: cover;
@@ -360,14 +324,14 @@
     
     .virtual-navbar{
         background-color: rgb(0, 0, 0);
-        width: 79%;
+        width: 100%;
         padding: 40px;
         opacity: .7;
         position: fixed;
         z-index: 3;
     }
         .model-banner img{
-            width: 40%;
+            width: 38%;
             text-align: center;
             position: fixed;
             left: -10px;
@@ -389,7 +353,7 @@
             position: fixed;
             margin-right: 5px;
             right: 20px;
-            top: 10px;
+            top: 17px;
             border-radius: 3px;
             z-index: 100;
             cursor: pointer;
@@ -439,4 +403,13 @@
         #footer{
             background-color: #efefef;
         }
-}
+        .footer-row{
+            font-size: 15px;
+        }
+
+
+
+    }
+
+
+
